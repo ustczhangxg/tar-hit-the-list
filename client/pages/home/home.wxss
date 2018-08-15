@@ -1,0 +1,122 @@
+.slide-image{
+  height: 100%;
+  border-radius:4px;
+}
+.bang{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 2;
+}
+.bang image{
+  width: 68px;
+  height: 68px;
+}
+/* --------- */
+.search{
+ 
+  margin-top:10px;
+}
+
+.search input{
+  border: 1px solid #ccc;
+  background: #ccc;
+  border-radius: 15px;
+  height: 30px;
+  width: 260px;
+  margin: 0 auto;
+  padding-left:30px; 
+  font-size:12px;
+  position: relative;
+ 
+}
+.search .sou{
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+/* ----------- */
+.mine{
+  
+  font-size: 12px;
+  margin-top:10px;
+  background-color: #f6f6f6;
+}
+.mine view:nth-of-type(1){
+  color:gold;
+  padding-left: 20px
+}
+.mine .ren{
+  height: 50px;
+ 
+}
+/* --------- */
+.pai{
+  font-size: 12px;
+}
+.pai .title{
+  padding-left:20px;
+  color: gold; 
+}
+.pai .ming{
+  padding: 0 0 0 20px;
+  position: relative;
+  margin: 10px 0 0 0;
+  
+}
+
+.pai .ming .tou{
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -6px;
+  left: 16px;
+}
+.pai .ming .renwu{
+  width: 46px;
+  height: 46px;
+  border-radius:50%; 
+  float: left;
+}
+.clearfix:after{
+  clear:both;
+  display: block;
+  height:0;
+  visibility: hidden;
+  content:"";
+}
+.left view:nth-of-type(1){
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  color:red;
+
+}
+.left view:nth-of-type(2){
+  position: absolute;
+  left: 70px;
+  top: 20px;
+  color: red;
+}
+.pai .right{
+  position: absolute;
+ 
+  top: 10px;
+  right: 22px;
+}
+.right text{
+  float:left;
+  margin:4px 10px 0 0;
+
+}
+
+.right button{
+  width:68px;
+  height: 22px;
+  text-align: center;
+  font-size:12px;
+  line-height: 22px;
+  background: red;
+  color: #ffffff;
+  border-radius:15px;
+}

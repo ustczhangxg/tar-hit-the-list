@@ -1,0 +1,105 @@
+<!-- 轮播 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{ind}}">
+    <swiper-item>
+      <view class='bang'>
+      <image src='../../images/1.png'></image>
+      </view>
+      
+      <image src="{{item}}" class="slide-image" width="355" height="auto"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 搜索 -->
+
+<view class='search'>
+  <view>
+    
+    <input type='search' placeholder='谁是你的爱豆呢' confirm-type="搜索">
+      <icon type="search" size="20" class='sou' color='#666'/>
+    </input>
+  </view>
+</view>
+<!-- 我的爱豆 -->
+<view class='mine'>
+  <view>
+  我的爱豆
+  </view>
+  <view class='ren'>
+        <!-- 存放支持过的任务数据 -->
+  </view>
+
+</view>
+<!-- 排名 -->
+<view class='pai'>
+  <view>
+    <view class='title'>
+      <text>6月明星实例榜</text>
+      <!-- <text>上月榜单</text> -->
+    </view>
+    <!-- 需要遍历的 -->
+    <view class='ming'> 
+      <view class='left clearfix'>
+        <image src="../../images/4.png" class='tou'></image>
+        <image src='http://127.0.0.1:3000/1.jpg' class='renwu'></image>
+        <view>NO.1</view>
+        <view>王俊凯</view>
+     </view>
+     <view class='right'>
+      <text>36600</text>
+      
+      <button bindtap='dabang' id='0'>
+
+      打榜
+       
+      </button>
+     
+      
+     </view>
+    </view>
+
+    <view class='ming'> 
+      <view class='left clearfix'>
+        <image src="../../images/5.png" class='tou'></image>
+        <image src='http://127.0.0.1:3000/2.jpg' class='renwu'></image>
+        <view style='color:gold;'>NO.2</view>
+        <view style='color:gold;'>王源</view>
+     </view>
+     <view class='right'>
+      <text>30000</text>
+      <button bindtap='dabang' id='1'>打榜</button>
+     </view>
+    </view>
+
+    <view class='ming'> 
+      <view class='left clearfix'>
+        <image src="../../images/5.png" class='tou'></image>
+        <image src='http://127.0.0.1:3000/3.jpg' class='renwu'></image>
+        <view style='color:gold;'>NO.3</view>
+        <view style='color:gold;'>关晓彤</view>
+     </view>
+     <view class='right'>
+      <text>26600</text>
+      <button  bindtap='dabang' id='2'>打榜</button>
+     </view>
+    </view>
+    <!-- 前三名特殊性 结束-->
+    <!-- 第四名以后遍历 -->
+     <view class='ming'> 
+      <view class='left clearfix'>
+        <image src='http://127.0.0.1:3000/0.jpg' class='renwu'></image>
+        <view style='color:gold;'>NO.4</view>
+        <view style='color:gold;'>关晓彤</view>
+     </view>
+     <view class='right'>
+      <text>16600</text>
+      <button  bindtap='dabang' id='3'>打榜</button>
+     </view>
+    </view>
+
+    <!-- 第四名结束 -->
+  </view>
+
+</view>
+
